@@ -1,0 +1,4 @@
+﻿Reading from C:\Users\Haresh Kanyal\Desktop\Latest Resume.pdf...
+
+--- Page 1 ---
+Error reading PDF: 'charmap' codec can't encode character '\u2642' in position 20: character maps to <undefined>

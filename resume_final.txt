@@ -1,0 +1,56 @@
+--- Page 1 ---
+Harsh Singh Kanyal
+♂phone+918920438126 | /envel⌢peharshkanyal04@gmail.com |/linkedinLinkedIn|/githubGitHub
+Summary
+Highly motivated AI Developer and Machine Learning Intern with hands-on experience in designing, building, and
+deploying machine learning and deep learning solutions for real-world applications. Proficient in Python, TensorFlow,
+PyTorch, Hugging Face Transformers, and LangChain, with a strong foundation in data analysis, model optimization,
+and AI system development. Demonstrates strong problem-solving, leadership, and teamwork skills through active
+participation in technical and collaborative projects. Passionate about leveraging AI to drive innovation and deliver
+impactful, scalable solutions.
+Technical Skills
+•Programming Languages:Python, HTML5, SQL, Java
+•Machine Learning & Deep Learning:TensorFlow, PyTorch, scikit-learn, XGBoost, OpenCV, NumPy, Pandas
+•NLP & LLMs:Hugging Face Transformers, LangChain, spaCy, NLTK, RAG, Named Entity Recognition (NER), Prompt
+Engineering
+•Deployment & F rameworks:Flask, Streamlit, Vercel, Render, Hugging Face Spaces
+•Cloud & T ools:Google Cloud Platform (GCP), Google Colab
+Education
+JIMS Engineering Management Technical Campus (Affiliated with GGSIPU)Greater Noida
+Bachelor of Technology in Artificial Intelligence and Machine Learning|Cgpa: 8.32022 - 2026
+Government Boys Senior Secondary SchoolTimarpur, Delhi
+Intermediate (CBSE)|Percentage: 85%2020 - 2021
+Internships and Training
+Ethara AI(LLM Post-Training Intern)Jan 2026 – Present
+• Contributed to LLM post-training workflows focused on response quality improvement, preference alignment, and human
+feedback-based refinement.
+• Worked on RLHF-style evaluation tasks by reviewing model outputs for helpfulness, relevance, instruction-following, and
+consistency.
+• Supported prompt-response assessment and data refinement workflows to improve model behavior across applied use
+cases.
+Emarson Infotech Pvt. Ltd.|(AI Cybersecurity Intern)Oct 2025 – Nov 2025
+• Researched recent global cybersecurity threats and organized threat intelligence related to enterprise services and
+platforms used by companies such as Cisco.
+• Built an automation workflow using n8n to collect, filter, and categorize cybersecurity threat information from multiple
+sources.
+• Reduced manual effort in threat monitoring by automating the collection and screening of relevant cybersecurity updates.
+Projects
+Kalpvriksha: SLD Detection System|Agentic AI, Relay.appMay 2025 - Aug 2025
+• Developed an AI-powered screening system for the early detection of Specific Learning Disabilities (SLDs), helping
+streamline identification and support timely educational intervention.
+• Designed a dual-stage GPT-4.1 workflow to analyze behavioral and academic indicators and generate personalized
+intervention recommendations based on detected learning patterns.
+• Built a serverless automation pipeline by integrating Google Forms, Relay.app, and the Gmail API to automate data
+collection, processing, and response delivery for pilot users.
+Cheating Surveillance System|Python, OpenCV, TensorFlow, NumPy, PandasMar 2025 – Apr 2025
+• Built an AI-powered remote proctoring system for online assessments to help maintain exam integrity in virtual
+environments. Processed real-time webcam feeds using OpenCV and TensorFlow/Keras to perform face detection, eye
+tracking, and object detection for suspicious activity monitoring.
+• Achieved approximately 80–85% monitoring accuracy during testing and pilot evaluation with 2–3 users.
+Academic Achievements and Certifications
+•Secured an internship opportunity at Infosys.
+•Selected for the Flipkart Hackathon Program.
+•Earned an ISRO certification in Geodata Analysis.
+LEADERSHIP AND EXTRACURRICULAR ACTIVITIES
+•Served as Organizer and Coordinator for the Department of Sports Club in 2025.
+•Served as Organizer and Coordinator for the Department of Artificial Intelligence and Machine Learning in 2024.

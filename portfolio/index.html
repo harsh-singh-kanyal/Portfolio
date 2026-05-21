@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Singh Kanyal | AI Developer & ML Engineer</title>
+  <meta name="description"
+    content="Portfolio of Harsh Singh Kanyal – AI Developer, ML Engineer, and LLM Specialist. Explore projects, skills, and experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Neural network particle canvas background -->
+  <canvas id="neural-canvas"
+    style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <span class="logo-badge">
+          <span class="logo-ring"></span>
+          <span class="logo-text">H<span class="logo-accent">S</span>K</span>
+        </span>
+        <span class="logo-dot">.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harshkanyal04@gmail.com" target="_blank" class="nav-cta"
+        id="hire-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+          style="margin-right: 5px; vertical-align: middle;">
+          <path
+            d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+        </svg>
+        Hire Me
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="orb orb4"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">Harsh Singh<br /><span class="gradient-text">Kanyal</span></h1>
+      <div class="hero-roles">
+        <span class="role-text" id="role-text">AI Developer</span>
+      </div>
+      <p class="hero-tagline">
+        Building intelligent systems that <span class="highlight">think</span>,
+        <span class="highlight">learn</span>, and <span class="highlight">adapt</span>
+        from LLMs to Computer Vision.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="view-work-btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline" id="lets-talk-btn">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">AI Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">8.3</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring ring3"></div>
+      <div class="avatar-ring ring2"></div>
+      <div class="avatar-ring ring1"></div>
+      <div class="avatar-circle">
+        <img src="assets/profile.jpg" alt="Harsh Singh Kanyal" class="profile-photo"
+          onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Crect fill=\'%236366f1\' width=\'100\' height=\'100\'/%3E%3Ctext fill=\'white\' font-family=\'Outfit, sans-serif\' font-size=\'40\' font-weight=\'bold\' x=\'50\' y=\'50\' text-anchor=\'middle\' dominant-baseline=\'central\'%3EHK%3C/text%3E%3C/svg%3E';" />
+        <div class="avatar-glow"></div>
+      </div>
+      <div class="float-chip chip1">🤖 LLM Fine-tuning</div>
+      <div class="float-chip chip2">👁 Computer Vision</div>
+      <div class="float-chip chip3">🔗 LangChain</div>
+      <div class="float-chip chip4">☁️ GCP</div>
+    </div>
+    <a href="#about" class="scroll-down" id="scroll-down-btn" aria-label="Scroll down">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Passionate About <span class="gradient-text">Intelligent Systems</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-icon">🎓</div>
+          <h3>Education</h3>
+          <p><strong>B.Tech – AI & ML</strong><br />JEMTEC (GGSIPU)<br />
+            <span class="tag-pill">CGPA: 8.3 &nbsp;|&nbsp; 2022–2026</span>
+          </p>
+          <hr class="card-hr" />
+          <p><strong> XIIth (CBSE)</strong><br />Govt. Boys Sr. Sec. School<br />
+            <span class="tag-pill">85% &nbsp;|&nbsp; 2020–2021</span>
+          </p>
+        </div>
+        <div class="about-card glass-card about-bio">
+          <h3>Who Am I ?</h3>
+          <p>I'm a highly motivated <strong>AI Developer & ML Engineer</strong> graduating in 2026, with hands-on
+            experience building and deploying machine learning and deep learning solutions for real-world applications.
+          </p>
+          <p>I specialize in <strong>LLMs, NLP, Computer Vision,</strong> and <strong>Agentic AI</strong>, and I'm
+            passionate about creating AI systems that genuinely make a difference from early learning disability
+            detection to cybersecurity automation.</p>
+          <div class="about-links">
+            <a href="https://linkedin.com" target="_blank" class="social-btn" id="linkedin-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" class="social-btn" id="github-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harshkanyal04@gmail.com" target="_blank"
+              class="social-btn" id="email-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+              </svg>
+              Email
+            </a>
+          </div>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">💡</div>
+          <h3>Current Focus</h3>
+          <ul class="focus-list">
+            <li><span class="focus-dot"></span>LLM Post-Training & RLHF</li>
+            <li><span class="focus-dot"></span>Agentic AI Systems</li>
+            <li><span class="focus-dot"></span>Retrieval-Augmented Generation</li>
+            <li><span class="focus-dot"></span>Computer Vision & OpenCV</li>
+            <li><span class="focus-dot"></span>AI for Social Good</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Arsenal</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <span class="skill-icon">💻</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier1"><img src="assets/python.svg" alt="Python"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'">Python</span>
+            <span class="skill-tag tier1"><img src="assets/html.svg" alt="HTML5"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'">HTML5</span>
+            <span class="skill-tag tier2"><img src="assets/sql.svg" alt="SQL"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'">SQL</span>
+            <span class="skill-tag tier2"><img src="assets/java.svg" alt="Java"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'">Java</span>
+            <span class="skill-tag tier1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                alt="C">C</span>
+            <span class="skill-tag tier1"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++">C++</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🧠</span>
+            <h3>ML & Deep Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier1"><img src="assets/tensorflow.svg" alt="TensorFlow"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'">TensorFlow</span>
+            <span class="skill-tag tier1"><img src="assets/pytorch.svg" alt="PyTorch"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg'">PyTorch</span>
+            <span class="skill-tag tier1"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+                alt="scikit-learn">scikit-learn</span>
+
+            <span class="skill-tag tier1"><img src="assets/opencv.svg" alt="OpenCV"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg'">OpenCV</span>
+            <span class="skill-tag tier2"><img src="assets/numpy.svg" alt="NumPy"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg'">NumPy</span>
+            <span class="skill-tag tier2"><img src="assets/pandas.svg" alt="Pandas"
+                onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg'">Pandas</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🗣️</span>
+            <h3>NLP & LLMs</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier1"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                alt="">Hugging Face</span>
+            <span class="skill-tag tier1"><img src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4"
+                alt="">LangChain</span>
+            <span class="skill-tag tier2"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Spacy_logo.svg"
+                alt="" onerror="this.src='https://avatars.githubusercontent.com/u/1305856?s=200&v=4'">spaCy</span>
+            <span class="skill-tag tier2"><img src="https://avatars.githubusercontent.com/u/415516?s=200&v=4"
+                alt="">NLTK</span>
+            <span class="skill-tag tier1"><img src="assets/rag_icon.png" alt=""
+                onerror="this.style.display='none'">RAG</span>
+            <span class="skill-tag tier2"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt=""
+                onerror="this.style.display='none'">NER</span>
+            <span class="skill-tag tier1"><img src="assets/prompt_icon.png" alt=""
+                onerror="this.style.display='none'">Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🚀</span>
+            <h3>Deployment & Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier1"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="">Flask</span>
+            <span class="skill-tag tier1"><img src="https://streamlit.io/images/brand/streamlit-mark-color.png"
+                alt="">Streamlit</span>
+            <span class="skill-tag tier2"><img
+                src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="">Vercel</span>
+            <span class="skill-tag tier2"><img src="assets/render_icon.png" alt="">Render</span>
+            <span class="skill-tag tier2"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+                alt="">HF Spaces</span>
+            <span class="skill-tag tier1"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                alt="">GCP</span>
+            <span class="skill-tag tier2"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="">Google
+              Colab</span>
+          </div>
+        </div>
+      </div>
+      <!-- Proficiency bars -->
+      <div class="proficiency-section glass-card">
+        <h3 class="prof-title">Core Proficiencies</h3>
+        <div class="chart-container"
+          style="position: relative; height:350px; width:100%; display: flex; justify-content: center;">
+          <div id="skillsPieChart" style="width:100%; height:100%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section exp-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="exp-header">
+              <div>
+                <h3>LLM Post-Training Intern</h3>
+                <p class="exp-company">🏢 Ethara AI</p>
+              </div>
+              <span class="exp-date">Jan 2026 – Present</span>
+            </div>
+            <span class="exp-badge current">Current Role</span>
+            <ul class="exp-list">
+              <li>Contributed to LLM post-training workflows focused on response quality improvement, preference
+                alignment, and human feedback-based refinement.</li>
+              <li>Worked on RLHF-style evaluation tasks by reviewing model outputs for helpfulness, relevance,
+                instruction-following, and consistency.</li>
+              <li>Supported prompt-response assessment and data refinement workflows to improve model behavior across
+                applied use cases.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>RLHF</span><span>LLM Fine-tuning</span><span>Prompt Engineering</span><span>Data Refinement</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="exp-header">
+              <div>
+                <h3>AI Cybersecurity Intern</h3>
+                <p class="exp-company">🏢 Emarson Infotech Pvt. Ltd.</p>
+              </div>
+              <span class="exp-date">Oct 2025 – Nov 2025</span>
+            </div>
+            <ul class="exp-list">
+              <li>Researched recent global cybersecurity threats and organized threat intelligence related to enterprise
+                services and platforms used by companies such as Cisco.</li>
+              <li>Built an automation workflow using n8n to collect, filter, and categorize cybersecurity threat
+                information from multiple sources.</li>
+              <li>Reduced manual effort in threat monitoring by automating the collection and screening of relevant
+                cybersecurity updates.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>n8n Automation</span><span>Threat Intelligence</span><span>Cybersecurity</span><span>AI
+                Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-img p-img1">
+            <div class="project-overlay">
+              <span class="project-emoji">🧠</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">May 2025 – Aug 2025</span>
+              <span class="project-status live">AI for Good</span>
+            </div>
+            <h3>Kalpvriksha: SLD Detection System</h3>
+            <p>An AI-powered screening system for early detection of Specific Learning Disabilities (SLDs), helping
+              streamline identification and support timely educational intervention.</p>
+            <ul class="project-highlights">
+              <li>🔹 Dual-stage GPT-4.1 workflow analyzing behavioral & academic indicators</li>
+              <li>🔹 Serverless pipeline: Google Forms → Relay.app → Gmail API</li>
+              <li>🔹 Personalized intervention recommendations based on detected patterns</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-icon"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                  alt="Agentic AI" class="inline-icon">Agentic AI</span>
+              <span class="tech-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+                  alt="GPT" class="inline-icon">GPT-4.1</span>
+              <span class="tech-icon"><img src="https://img.icons8.com/color/48/000000/api-settings.png" alt="Relay App"
+                  class="inline-icon">Relay.app</span>
+              <span class="tech-icon"><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail API"
+                  class="inline-icon">Gmail API</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-img p-img2">
+            <div class="project-overlay">
+              <span class="project-emoji">👁️</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">Mar 2025 – Apr 2025</span>
+              <span class="project-status">Computer Vision</span>
+            </div>
+            <h3>Cheating Surveillance System</h3>
+            <p>An AI-powered remote proctoring system for online assessments that maintains exam integrity using
+              real-time video analysis.</p>
+            <ul class="project-highlights">
+              <li>🔹 Real-time webcam feed processing with OpenCV & TensorFlow/Keras</li>
+              <li>🔹 Face detection, eye tracking & object detection for monitoring</li>
+              <li>🔹 ~80–85% monitoring accuracy in pilot evaluation</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-icon"><img src="assets/python.svg" alt="Python" class="inline-icon"
+                  onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'">Python</span>
+              <span class="tech-icon"><img src="assets/opencv.svg" alt="OpenCV" class="inline-icon"
+                  onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg'">OpenCV</span>
+              <span class="tech-icon"><img src="assets/tensorflow.svg" alt="TensorFlow" class="inline-icon"
+                  onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'">TensorFlow</span>
+              <span class="tech-icon"><img src="assets/numpy.svg" alt="NumPy" class="inline-icon"
+                  onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg'">NumPy</span>
+              <span class="tech-icon"><img src="assets/pandas.svg" alt="Pandas" class="inline-icon"
+                  onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg'">Pandas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements & <span class="gradient-text">Leadership</span></h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg"
+              alt="Infosys" style="width:60px; height:60px; object-fit:contain;"></div>
+          <h3>Infosys Internship</h3>
+          <p>Secured an internship opportunity at Infosys — a prestigious global IT and consulting firm.</p>
+          <span class="achieve-tag">Career Milestone</span>
+        </div>
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon"><img src="https://cdn.iconscout.com/icon/free/png-256/flipkart-226594.png"
+              alt="Flipkart" style="width:60px; height:60px; object-fit:contain;"></div>
+          <h3>Flipkart Hackathon</h3>
+          <p>Selected for the prestigious Flipkart Hackathon Program among competitive applicants nationwide.</p>
+          <span class="achieve-tag">Hackathon</span>
+        </div>
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Indian_Space_Research_Organisation_Logo.svg"
+              alt="ISRO" style="width:60px; height:60px; object-fit:contain;"></div>
+          <h3>ISRO Certification</h3>
+          <p>Earned an official ISRO certification in Geodata Analysis — India's premier space research organization.
+          </p>
+          <span class="achieve-tag">Certification</span>
+        </div>
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon">🏆</div>
+          <h3>Sports Club Organizer</h3>
+          <p>Served as Organizer and Coordinator for the Department of Sports Club in 2025.</p>
+          <span class="achieve-tag">Leadership 2025</span>
+        </div>
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon">🤖</div>
+          <h3>AI/ML Dept. Coordinator</h3>
+          <p>Served as Organizer and Coordinator for the Department of AI & ML in 2024.</p>
+          <span class="achieve-tag">Leadership 2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Collaborate</span></h2>
+        <p class="section-sub">I'm actively looking for AI/ML roles. Let's build something impactful together!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card glass-card" id="contact-email-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harshkanyal04@gmail.com" target="_blank"
+            class="contact-link" id="email-contact-link">harshkanyal04@gmail.com</a>
+        </div>
+        <div class="contact-card glass-card" id="contact-phone-card">
+          <div class="contact-icon">📱</div>
+          <h3>Phone</h3>
+          <a href="tel:+918920438126" class="contact-link" id="phone-contact-link">+91 8920438126</a>
+        </div>
+        <div class="contact-card glass-card" id="contact-linkedin-card">
+          <div class="contact-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <a href="https://linkedin.com" target="_blank" class="contact-link" id="linkedin-contact-link">Connect with
+            me</a>
+        </div>
+        <div class="contact-card glass-card" id="contact-github-card">
+          <div class="contact-icon">💻</div>
+          <h3>GitHub</h3>
+          <a href="https://github.com" target="_blank" class="contact-link" id="github-contact-link">View my code</a>
+        </div>
+      </div>
+      <div class="contact-cta glass-card">
+        <h3>Open to Full-time AI/ML Roles & Collaborations</h3>
+        <p>B.Tech AI & ML student (2026 graduate) with real-world internship experience in LLMs, Computer Vision, and
+          Agentic AI. Ready to contribute from Day 1.</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harshkanyal04@gmail.com" target="_blank"
+          class="btn btn-primary" id="contact-cta-btn">Send me an Email ✉️</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">HSK<span class="dot">.</span></span>
+        <p>© 2026 Harsh Singh Kanyal · Built for LinkedIn Hiring</p>
+        <div class="footer-links">
+          <a href="#home" id="footer-home">Home</a>
+          <a href="#about" id="footer-about">About</a>
+          <a href="#projects" id="footer-projects">Projects</a>
+          <a href="#contact" id="footer-contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
